@@ -5,21 +5,21 @@
 // ---------------------------------------------------------------------------
 
 export const profile = {
-  name: "Adrian Cole",
-  role: "Software engineer",
-  tagline: "Backend systems that hold.",
+  name: "Leibern Vicente",
+  role: "4th Year IT Student - Full-Stack Developer",
+  tagline: "Full-Stack applications that work from interface to database.",
   focus: "backend systems, developer tooling, infrastructure",
-  location: "Remote — GMT-5",
+  location: "Philippines — GMT +8",
   availability: "OPEN TO WORK",
-  email: "hello@adriancole.dev",
-  since: "2019",
+  email: "leivcnt01@gmail.com",
+  since: "2026",
   statement:
-    "Six years building the layer teams don't see until it breaks — APIs, data pipelines, and the internal tools that keep a product honest as it grows. One engineer, no handoffs.",
+    "I build web applications across the frontend, backend, and database layer — from responsive interfaces and APIs to authentication,data modeling, and deployment.",
   practice: [
     "No account manager between the scoping call and the commit. The person who reads your schema is the person who ships the migration and answers the follow-up email.",
     "Fewer moving parts over more features. A system I hand off should still make sense to someone reading it cold, six months later, at 2am, mid-incident.",
   ],
-  onFile: "5 shipped · 3 in production · 2019—present",
+  focus: "Full-Stack Development, Backend Systems, Developer Tooling, Infrastructure",
   socials: [
     { label: "GitHub", href: "https://github.com/" },
     { label: "LinkedIn", href: "https://linkedin.com/" },
@@ -138,7 +138,7 @@ export const projects: Project[] = [
 export const skillGroups = [
   {
     label: "DEVELOPMENT",
-    items: ["TypeScript", "JavaScript", "Go", "Python", "SQL"],
+    items: ["TypeScript", "JavaScript", "PHP", "Python", "SQL"],
   },
   {
     label: "WEB",

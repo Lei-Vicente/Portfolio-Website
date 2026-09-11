@@ -29,10 +29,10 @@ export default function HomePage() {
           <h1 className="hero__stack">
             <span className="hero__stack-word">{profile.tagline}</span>
             <span className="hero__stack-word hero__stack-word--repeat" style={{ ["--o" as any]: 0.55 }}>
-              It holds.
+              They work.
             </span>
             <span className="hero__stack-word hero__stack-word--repeat" style={{ ["--o" as any]: 0.28 }}>
-              Still holds.
+              Still work.
             </span>
           </h1>
 
@@ -63,8 +63,8 @@ export default function HomePage() {
               <dd>{profile.availability}</dd>
             </div>
             <div className="hero__meta-item">
-              <dt className="meta-text">On file</dt>
-              <dd>{profile.onFile}</dd>
+              <dt className="meta-text">Focus</dt>
+              <dd>{profile.focus}</dd>
             </div>
           </dl>
         </section>
