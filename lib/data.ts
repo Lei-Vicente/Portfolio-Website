@@ -8,7 +8,6 @@ export const profile = {
   name: "Leibern Vicente",
   role: "4th Year IT Student - Full-Stack Developer",
   tagline: "Full-Stack applications that work from interface to database.",
-  focus: "backend systems, developer tooling, infrastructure",
   location: "Philippines — GMT +8",
   availability: "OPEN TO WORK",
   email: "leivcnt01@gmail.com",
