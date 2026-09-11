@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { profile, experience, skillGroups } from "@/lib/data";
+import { education, experience, profile, skillGroups } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: `Resume — ${profile.name}`,
@@ -57,6 +57,28 @@ export default function ResumePage() {
             ))}
           </div>
         </div>
+
+        <section className="resume-education">
+          <div className="section-head">
+            <span className="section-head__num">—</span>
+            <h2 className="section-head__title">Education</h2>
+            <span className="section-head__rule" aria-hidden="true" />
+          </div>
+          <div className="resume-education__list">
+            {education.map((entry) => (
+              <article className="resume-education__entry" key={entry.credential}>
+                <div className="meta-text">{entry.period}</div>
+                <h3 className="resume-entry__role">{entry.credential}</h3>
+                <div className="resume-entry__org">{entry.school}</div>
+                <ul className="resume-entry__achievements">
+                  {entry.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <section className="resume-skills">
           <div className="section-head">

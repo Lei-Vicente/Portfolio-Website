@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
   return (
@@ -36,6 +37,7 @@ export default function Header() {
       </div>
 
       <div className="sidebar-foot">
+        <ThemeToggle />
         <span className="status-dot" aria-label="Available" />
       </div>
     </header>

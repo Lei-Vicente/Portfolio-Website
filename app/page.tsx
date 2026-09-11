@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkRegistry from "@/components/WorkRegistry";
@@ -20,23 +21,28 @@ export default function HomePage() {
       <main className="main">
         {/* ------------------------------------------------------------ HERO */}
         <section className="hero">
-          <div className="meta-text hero__eyebrow">
-            {profile.name.toUpperCase()} / {profile.role.toUpperCase()}
+          <div className="hero__identity">
+            <div className="hero__portrait">
+              <Image
+                src="/Professional Picture.jpg"
+                alt={`Professional portrait of ${profile.name}`}
+                fill
+                priority
+                sizes="(max-width: 720px) min(100vw - 40px, 300px), 320px"
+                className="hero__portrait-image"
+              />
+            </div>
           </div>
 
-          <h1 className="hero__stack">
-            <span className="hero__stack-word">{profile.tagline}</span>
-            <span className="hero__stack-word hero__stack-word--repeat" style={{ ["--o" as any]: 0.55 }}>
-              They work.
-            </span>
-            <span className="hero__stack-word hero__stack-word--repeat" style={{ ["--o" as any]: 0.28 }}>
-              Still work.
-            </span>
-          </h1>
+          <div className="hero__work">
+            <h1 className="hero__stack">
+            <span className="hero__stack-word">{profile.name}</span>
+            <span className="hero__stack-role">{profile.role}</span>
+            </h1>
 
-          <p className="hero__statement">{profile.statement}</p>
+            <p className="hero__statement">{profile.statement}</p>
 
-          <div className="hero__cta">
+            <div className="hero__cta">
             <Link href="#work" className="link-arrow">
               See the work
               <span className="link-arrow__glyph">→</span>
@@ -49,9 +55,9 @@ export default function HomePage() {
               Get in touch
               <span className="link-arrow__glyph">→</span>
             </Link>
-          </div>
+            </div>
 
-          <dl className="hero__meta">
+            <dl className="hero__meta">
             <div className="hero__meta-item">
               <dt className="meta-text">Location</dt>
               <dd>{profile.location}</dd>
@@ -64,7 +70,8 @@ export default function HomePage() {
               <dt className="meta-text">Focus</dt>
               <dd>{profile.focus}</dd>
             </div>
-          </dl>
+            </dl>
+          </div>
         </section>
 
         {/* ------------------------------------------------------------ 01 WORK */}
@@ -93,9 +100,12 @@ export default function HomePage() {
           <div className="profile-grid">
             <div>
               <p className="body-text">
-                Software engineer working solo since {profile.since},
-                mostly on backend infrastructure and the internal tools
-                teams use to move fast without breaking things.
+                I thrive in collaborative settings, where I contribute positively as
+a team player to reach shared objectives as a proactive student leader with extensive experience in
+liaison and stakeholder management. Proven ability to bridge communication gaps between
+organizations and diverse groups of people. Skilled at managing sensitive information, resolving
+conflicts, and coordinating large-scale projects to meet organizational objectives.
+
               </p>
               <div className="practice-block">
                 {profile.practice.map((p, i) => (

@@ -15,7 +15,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adrian Cole — Software Engineer",
+  title: "Leibern Vicente — Portfolio",
   description:
     "Backend engineer building developer tools and infrastructure. Selected work, profile, skills, experience, and notes.",
 };

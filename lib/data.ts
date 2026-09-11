@@ -136,20 +136,26 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   {
-    label: "DEVELOPMENT",
-    items: ["TypeScript", "JavaScript", "PHP", "Python", "SQL"],
+    label: "FRONT-END",
+    items: ["HTML", "CSS", "JavaScript"],
   },
   {
-    label: "WEB",
-    items: ["Next.js", "React", "Node.js", "REST / gRPC APIs"],
+    label: "PROGRAMMING & DATA",
+    items: ["C++", "Java", "Python", "SQL", "PHP"],
   },
   {
-    label: "INFRASTRUCTURE",
-    items: ["PostgreSQL", "Redis", "Docker", "AWS", "CI/CD"],
+    label: "TOOLS & CREATIVE",
+    items: ["Microsoft Word", "Microsoft Excel", "PowerPoint", "Canva", "CapCut"],
   },
   {
-    label: "TOOLS",
-    items: ["Git", "GitHub", "VS Code", "Linear", "Figma"],
+    label: "OPERATIONS & SOFT SKILLS",
+    items: [
+      "Inventory Management",
+      "Record Keeping",
+      "Project Management",
+      "Effective Communication",
+      "Critical Thinking",
+    ],
   },
 ];
 
@@ -165,53 +171,66 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     year: "2026",
-    role: "Senior Software Engineer",
-    org: "Northbound Labs",
-    period: "2024 — PRESENT",
+    role: "IT Support",
+    org: "Value Care Health Systems, Inc. (ValuCare)",
+    period: "FEBRUARY 2026 — APRIL 2026",
     description:
-      "Lead engineer for the payments infrastructure team, responsible for the systems that reconcile and settle transactions across three providers.",
+      "Provided hardware and technical support across departments, helping maintain reliable office systems, network connectivity, and service for non-technical staff.",
     achievements: [
-      "Redesigned the settlement pipeline, cutting reconciliation errors by 74%",
-      "Built the internal tooling used by finance and support to trace any transaction end to end",
-      "Mentored two junior engineers through their first on-call rotations",
+      "Configured static IP addresses, network settings, printer drivers, and network-enabled devices",
+      "Diagnosed hardware, software, power, display, and connectivity issues; performed maintenance, repairs, firmware updates, and driver updates",
+      "Managed and prioritized help desk tickets while applying preventive maintenance and standardized troubleshooting procedures",
+      "Explained technical issues clearly to non-technical staff and supported multiple departments",
     ],
   },
   {
     year: "2025",
-    role: "Software Engineer",
-    org: "Fielding & Co.",
-    period: "2022 — 2024",
+    role: "Student Assistant",
+    org: "Rizal Technological University — Institute of Computer Studies Office",
+    period: "AUGUST 2025 — OCTOBER 2025",
     description:
-      "Built and maintained backend services for a logistics platform used by regional carriers.",
+      "Supported office administration, records management, and technical operations for the Institute of Computer Studies.",
     achievements: [
-      "Migrated a monolithic scheduling service into three independently deployable services",
-      "Introduced structured logging and tracing, cutting incident diagnosis time by half",
-      "Wrote the onboarding documentation still used by every new engineering hire",
+      "Maintained a PHP and Microsoft Access database for student capstone projects to improve faculty data retrieval",
+      "Organized departmental records and generated administrative reports using Microsoft Excel",
+      "Tracked and audited office equipment and laboratory assets with accurate inventory logs",
+      "Streamlined receiving and outgoing document processing by logging, digitizing, and routing official communications",
     ],
   },
   {
-    year: "2024",
-    role: "Backend Engineer",
-    org: "Fielding & Co.",
-    period: "2022 — 2024",
+    year: "2025",
+    role: "Head of Liaison Committee",
+    org: "City of Mandaluyong Collegiate Scholarship Association (CMCSA)",
+    period: "2025 — PRESENT",
     description:
-      "Joined as the second backend hire, building the core scheduling and dispatch systems.",
+      "Led liaison operations for a scholarship program, coordinating stakeholders, program processes, and student volunteer teams.",
     achievements: [
-      "Designed the initial data model for carrier scheduling, still in production",
-      "Built the first version of the dispatch API used by all client integrations",
+      "Established operational processes for scholarship applications, review, compliance, and timely fund disbursement",
+      "Planned and set up seminars for scholarship members and external professionals while meeting attendance goals",
+      "Led student volunteers in delivering large-scale orientation events under strict deadlines",
     ],
   },
+];
+
+export type EducationEntry = {
+  credential: string;
+  school: string;
+  period: string;
+  details: string[];
+};
+
+export const education: EducationEntry[] = [
   {
-    year: "2023",
-    role: "Software Engineer",
-    org: "Hollow Studio",
-    period: "2020 — 2022",
-    description:
-      "Full-stack engineer at a small product studio, working across client projects in e-commerce and media.",
-    achievements: [
-      "Delivered six client projects from technical scoping through launch",
-      "Built a shared component library adopted across four client codebases",
-    ],
+    credential: "Bachelor of Science in Information Technology",
+    school: "Rizal Technological University, Mandaluyong City",
+    period: "2023 — PRESENT",
+    details: ["Academic Achiever", "CMCS Scholar (2023 — Present)"],
+  },
+  {
+    credential: "Senior High School — STEM Strand",
+    school: "Rizal Technological University, Mandaluyong City",
+    period: "2021 — 2023",
+    details: ["With Honors"],
   },
 ];
 
